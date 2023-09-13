@@ -1,27 +1,52 @@
-# React + TypeScript + Vite
+# Markdown Previewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This is a Markdown Previewer built with React and TypeScript. It allows the user to input Markdown text and instantly displays the corresponding HTML output. The project also supports GitHub-flavored Markdown and syntax highlighting.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Screenshot](src/assets/markdown-preview-demo.png) <!-- Replace with actual screenshot -->
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Real-time Markdown to HTML conversion
+- Support for GitHub-flavored Markdown
+- Code syntax highlighting
+- Stylish, responsive design
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- React
+- TypeScript
+- styled-components
+- remark-gfm
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Installation
+
+1. Clone the repository
+
+   ```bash
+   git clone https://github.com/KeenoLee/react-markdown-previewer.git
+
+   ```
+
+2. Navigate to the project folder
+
+   ```bash
+   cd markdown-previewer
+
+   ```
+
+3. Install dependencies
+
+   ```bash
+   npm install
+
+   ```
+
+4. Start the development server
+   ```bash
+   npm start dev
+   ```
+
+Usage
+Open your browser and go to http://localhost:3000/. You should see the Markdown Previewer in action. Start typing Markdown text in the input area and see the HTML output on the fly.
